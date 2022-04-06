@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+  background-color: #202020;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Nav Bars*/
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  /* logo Youtube*/
+
+#menuYoutube{
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+
+  color: white;
+  cursor: pointer;
+}
+
+.fa-bars{
+  padding: 8px;
+}
+
+#logo{
+  display: flex;
+  padding: 18px 14px 18px 16px;
+}
+
+.fa-youtube{
+  color: red;
+  padding-right: 5px;
+}
+
+.fa-youtube::before{
+  background:  radial-gradient(white 2px, #202020 50%);
+}
+
+
+
+
+#fr{
+  font-size: 10px;
+  color: #9a9a9a;
+}
+
+  /* input zone */
+
+input{
+  height: 40px;
+  width: 600px;
+  background-color: #121212;
+}
+
+
+
+
+#btnSearch{
+  height: 40px;
+  width: 60px;
+  background-color: #313131;
+  color: white;
+  cursor: pointer;
+}
+
+/*contenue principal*/
+
+main{
+  display: flex;
+ 
+}
+
+/* media recherche */
+
+@media screen and (max-width: 900px){
+  input{
+    width: 300px;
+  }
+ }
+ 
+ @media screen and (max-width: 600px){
+   input{
+     width: 200px;
+   }
+   #btnSearch{
+     display: none;
+   }
+  }
+ 
+
+/* icone gauche */ 
+
+#sectionAccueil{
+  color: white;
+  font-size: 16px;
+  
+}
+
+.alignIcone{
+  display: flex;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.alignIcone:hover{
+  background-color: #383838;
+}
+
+
+.fa-solid{
+  margin-right: 8px;
+}
+
+hr{
+  height: 1px;
+  border: none;
+  background-color: #383838;
+}
+
+@media screen and (max-width: 300px){
+   #sectionAccueil{
+    display: none;
+  }
+ }
+
+/* section category et card */
+
+
+
+/* category */
+
+#divCategory{
+  border: 1px solid white;
+  border-left: none;
+  border-right: none;
+  display: flex;
+}
+
+#divCategory button{
+  margin: 5px;
+  height: 30px;
+  border-radius: 24px;
+  margin: 12px 12px 12px 12px;
+  padding: 12px;
+
+  display: flex;
+  align-items: center;
+
+  color: white;
+  background-color:#373737 ;
+
+  border: 1px solid #4b4b4b;
+  cursor: pointer;
+}
+
+#divCategory button:hover{
+  background-color: white;
+  color: #121212;
+}
+
+
+/* Cards*/
+
+#divCards{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 80px;
+}
+
+.card{
+  margin: 7px;
+  cursor: pointer;
+}
+
+.card:hover{
+  transition-delay:1s;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transform:scale(1.25);
+}
+
+.imgCard{
+  height: 200px;
+  width: 360px;
+
+}
+
+.imgIcone{
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.infoCard{
+  display: flex;
+
+  color: #aaaaaa;
+}
+
+h4{
+  margin: 0;
+  color: white;
+  font-size: 16px;
+}
+
+.textCard{
+  margin-left: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+ 
+}
+
+.textCard div{
+  margin: 5px;
+}
+
